@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>home page</title>
+{% endblock %}
+
+{% block first %}
+    <form method="post">
+      {% csrf_token %}
+        {{form.as_p}}
+<!--        Enter Name:<input type="text" name="name" placeholder="Enter Full Name Here"><br><br>-->
+<!--        Enter Email Id:<input type="email" name="email" placeholder="emailid@xyz.com"><br><br>-->
+<!--        Enter Mobile No:<input type="number" name="mono" placeholder="73878*****"><br><br>-->
+<!--        Enter City:<input type="text" name="city" placeholder="city name"><br><br>-->
+        <input type="submit" VALUE="Submit">
+    </form>
+
+{% endblock %}
